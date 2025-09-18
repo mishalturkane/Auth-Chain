@@ -599,6 +599,16 @@
             return;
           }
 
+           else if (name.trim().toLowerCase() === "mishal") {
+            showModal(`
+        <div class="text-2xl text-green-600">
+          🚨 Hey <b>${escapeHtml(name)}</b>,you are soo cool</u>.
+        </div>
+        <div class="text-sm mt-2">ohh ser you are the god level developer</div>
+      `);
+            return;
+          }
+
           const ok = Math.random() < 0.5;
           if (ok) {
             showModal(
