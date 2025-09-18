@@ -589,6 +589,15 @@
       `);
             return;
           }
+           else if (name.trim().toLowerCase() === "upasna") {
+            showModal(`
+        <div class="text-2xl text-red-600">
+          🚨 Ohh god <b>${escapeHtml(name)}</b>, you are <u>criminal</u>.
+        </div>
+        <div class="text-sm mt-2">now we are tacking some action againts you❌</div>
+      `);
+            return;
+          }
 
           const ok = Math.random() < 0.5;
           if (ok) {
